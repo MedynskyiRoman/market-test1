@@ -93,6 +93,9 @@ content {
 .price div:first-child {
     width: 100px;
     font-size: 20px;
+}
+
+.price  div:first-child span {
     text-decoration: line-through;
 }
 
@@ -115,7 +118,6 @@ content {
     border-radius: 5px;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .bonus div:first-child {
