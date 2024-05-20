@@ -4,40 +4,41 @@
 //Визначення масиву товарів
 let itemsArray = [
     {
-        fistName: "Віталій",
-        lastName: "Шатківський",
-        kubki: 56456,
-        subject: "CS",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/03/dsc07815-683x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/shatkivskyy-v-m/",
+        title: "Мотокоса",
+        mono: "6",
+        privat: "8",
+        old_prise: "5499",
+        new_prise: "4497",
+        bonus_prise: "4395",
+        photo: "img/1.jpg",
     },
     {
-        fistName: "Іван",
-        lastName: "Севрук",
-        kubki: 6350,
-        subject: "Захист України",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/sevruk-ivan-hryhorovych-683x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/sevruk-i-h/",
+        title: "Газонокосарка",
+        mono: "5",
+        privat: "60",
+        old_prise: "12540",
+        new_prise: "10550",
+        bonus_prise: "9500",
+        photo: "img/2.png",
     },
     {
-        fistName: "Олена",
-        lastName: "Геча",
-        kubki: 654564564894,
-        subject: "Історія",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/hecha-olena-anatoliyivna-683x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/hecha-o-a/",
+        title: "Оприскувач",
+        mono: "12",
+        privat: "13",
+        old_prise: "6000",
+        new_prise: "4130",
+        bonus_prise: "3201",
+        photo: "img/3.png",
     },
     {
-        fistName: "Василь",
-        lastName: "Бабій",
-        kubki: 654,
-        subject: "Фізика",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/babiy-vasyl-dmytrovych-683x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/babiy-vasyl-dmytrovych/",
+        title: "Електричний тример",
+        mono: "12",
+        privat: "13",
+        old_prise: "6000",
+        new_prise: "5800",
+        bonus_prise: "5500",
+        photo: "img/4.png",
     },
-
-
-
 //     'Газонокосарка 43',
 //     'Електричний тример 110',
 //     'Електрична газонокосарка 32',
@@ -63,24 +64,37 @@ if (itemsDiv) {
     //Створення за прізвищем
     itemsArray
     
-    //Сортування за прізвищем
-    .sort((a,b) => a.lastName.localeCompare(b.lastName))
-    //
     .forEach((item, index) => {
     //console.log(item)
     itemsDiv.innerHTML += 
     `
-    <div class = "item">
-        <h2>Вчитель №${index + 1} з ${itemsArray.length}</h2>
-        <p>${item.lastName} ${item.fistName} </p>
-        <p> Кількість кубків в бравл старс: ${item.kubki} </p>
-        <p>
-            <a href="${item.url}" target="_blank">
-                <img src="${item.photo}" class="item-image">
-            </a>
-        </p>
-        <p><a href="${item.url}" target="_blank">Профіль</a></p>
-    </div>
+    <div class="item">
+                <div class="item-title">${item.title}</div>
+
+                <!-- Блок зображення товару -->
+                <div class="item-image">                    
+                    <img src="${item.photo}" alt="Мотокоса">
+                </div>
+               
+
+                <!-- Блок частин оплати -->
+                <div class="parts-pay">
+                    <div><img src="img/mono-lapka.png" alt="">${item.mono}</div>
+                    <div><img src="img/pt.png" alt="">${item.privat}</div>
+                </div>
+
+                <!-- Блок ціни -->
+                <div class="price">
+                    <div><span>${item.old_prise}</span><sup>₴</sup></div>
+                    <div><span>${item.new_prise}</span><sup>₴</sup></div>
+                </div>
+
+                <!-- Блок бонусної ціни -->
+                <div class="price bonus">
+                    <div>ціна за купоном</div>
+                    <div><span>${item.bonus_prise}</span><sup>₴</sup></div>
+                </div>
+            </div>
     `
 })
 
