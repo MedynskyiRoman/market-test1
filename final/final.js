@@ -1,287 +1,274 @@
-//перевірка чи підключений файл
-//console.log('Програмно перевірили чи працює консоль')
+// Перевірка чи підключений файл
+console.log('Програмно перевірили чи працює консоль');
 
-//Визначення масиву товарів
+// Визначення масиву товарів
 let itemsArray = [
     {
-        title: "",
-        author: "Присяжнюк Богдана",
-        email: "23a_pbv@liceum.ztu.edu.ua",
-        group: "10-А 2",
-        image: "",
-        game_github: "https://github.com/Prydana/Phaser2stGame",
-        game_pages: "https://prydana.github.io/Phaser2stGame/",
-        docs: "https://drive.google.com/drive/folders/1K--lAbvnwzUQ4BjN136Blvp46ErW0mkJ",
-        forms: "https://forms.gle/HnBZ5pzJ4DLpa6E69",
-        gamemarket_github: "https://github.com/Prydana/GameMarket_Prysiazhniuk",
-        gamemarket_pages: "https://prydana.github.io/GameMarket_Prysiazhniuk/",
-        market_pages: "https://prydana.github.io/GameMarket_Prysiazhniuk/market.html",
-        stars: ""
+      email: "23a_byeyu@liceum.ztu.edu.ua",
+      group: "10-А 2",
+      fullName: "Будішевський Єгор",
+      gameTitle: "",
+      authorPhoto: "img/Будішевський.jpg",
+      gamePhoto: "img/скрінБудішевський.png",
+      githubRepo: "https://github.com/EgorZTUkl/Platformer",
+      githubPages: "https://egorztukl.github.io/Platformer/",
+      documentationFolder: "https://drive.google.com/drive/folders/1Gme_cOgj7R14t3kaxbLxjPxgmTvhTKYq?usp=drive_link",
+      surveyForm: "https://forms.gle/ziZ41L7qHnzp6o7x6",
+      gameMarketRepo: "https://github.com/EgorZTUkl/Gamemarket_Budishevskiy",
+      gameMarketPages: "https://egorztukl.github.io/Gamemarket_Budishevskiy/",
+      marketPages: "https://egorztukl.github.io/Gamemarket_Budishevskiy/market/market.html",
+      finalGameMarketPage: ""
     },
     {
-        title: "",
-        author: "Недзвецький Олег",
-        email: "23a_nom@liceum.ztu.edu.ua",
-        group: "10-А 2",
-        image: "",
-        game_github: "https://github.com/Viogoo/Phaser2stGame2",
-        game_pages: "https://viogoo.github.io/Phaser2stGame2/",
-        docs: "https://drive.google.com/drive/folders/1a-3VlIBE5SnalcPulY1mKWRTqvyydk5i?usp=sharing",
-        forms: "https://forms.gle/bvgt8tydcyS6AXPA6",
-        gamemarket_github: "https://github.com/Viogoo/Game_Market_Nedzvetskiy_Oleg",
-        gamemarket_pages: "https://viogoo.github.io/Game_Market_Nedzvetskiy_Oleg/",
-        market_pages: "https://viogoo.github.io/market/",
-        stars: ""
+      email: "23a_mrd@liceum.ztu.edu.ua",
+      group: "10-А 2",
+      fullName: "Мединський Роман",
+      gameTitle: "Пригоди козака",
+      authorPhoto: "img/Мединський.jpg",
+      gamePhoto: "img/скрінМединський.png",
+      githubRepo: "https://github.com/MedynskyiRoman/Phaser2ndGame",
+      githubPages: "https://medynskyiroman.github.io/Phaser2ndGame/",
+      documentationFolder: "https://drive.google.com/drive/folders/1ujjej9ifF-2xqLKIc5X2vpohSn6ZenZ4?usp=sharing",
+      surveyForm: "https://forms.gle/MzKxFco9L798EjKi8?authuser=1",
+      gameMarketRepo: "https://github.com/MedynskyiRoman/GameMarket_Medynskyi",
+      gameMarketPages: "https://medynskyiroman.github.io/GameMarket_Medynskyi/",
+      marketPages: "https://medynskyiroman.github.io/market-test1",
+      finalGameMarketPage: "https://medynskyiroman.github.io/market-test1/final/final.html"
     },
     {
-        title: "",
-        author: "Ніцкевич Дар'я",
-        email: "23a_ndi@liceum.ztu.edu.ua",
-        group: "10-А 2",
-        image: "",
-        game_github: "https://github.com/Daria1284/Phaser2ndGame",
-        game_pages: "https://daria1284.github.io/Phaser2ndGame/",
-        docs: "https://drive.google.com/drive/folders/1sx_bP3YdCY99mFM02u-FVcmtGm8bfNc1?usp=drive_link",
-        forms: "https://forms.gle/PSoFKF3f8JE8JDF18",
-        gamemarket_github: "https://github.com/Daria1284/GameMarket_Nitskevich",
-        gamemarket_pages: "https://daria1284.github.io/GameMarket_Nitskevich/",
-        market_pages: "https://daria1284.github.io/GameMarket_Nitskevich/market.html",
-        stars: ""
+      email: "23a_mnv@liceum.ztu.edu.ua",
+      group: "10-А 2",
+      fullName: "Михальський Нікіта",
+      gameTitle: "",
+      authorPhoto: "img/Михальський.jpg",
+      gamePhoto: "img/скрінМихальський.png",
+      githubRepo: "https://github.com/Cement-Official/Minorun",
+      githubPages: "https://cement-official.github.io/Minorun/",
+      documentationFolder: "https://docs.google.com/document/d/1lgWfQHAtTu1E_xi-3cKiAC_8ZR0TD4xTL6B5dMvqGY0/edit?usp=sharing",
+      surveyForm: "https://forms.gle/XVTQaam7Maj2HLCh8",
+      gameMarketRepo: "https://github.com/Cement-Official/GameMarket_Myhalskiy",
+      gameMarketPages: "https://cement-official.github.io/GameMarket_Myhalskiy/",
+      marketPages: "https://cement-official.github.io/GameMarket_Myhalskiy/market.html?authuser=0",
+      finalGameMarketPage: ""
     },
     {
-        title: "",
-        author: "Соломонюк Богдан",
+      email: "23a_nom@liceum.ztu.edu.ua",
+      group: "10-А 2",
+      fullName: "Недзвецький Олег",
+      gameTitle: "",
+      authorPhoto: "img/Недзвецький.jpg",
+      gamePhoto: "img/скрінНедзвецький.png",
+      githubRepo: "https://github.com/Viogoo/Phaser2stGame2",
+      githubPages: "https://viogoo.github.io/Phaser2stGame2/",
+      documentationFolder: "https://drive.google.com/drive/folders/1a-3VlIBE5SnalcPulY1mKWRTqvyydk5i?usp=sharing",
+      surveyForm: "https://forms.gle/bvgt8tydcyS6AXPA6",
+      gameMarketRepo: "https://github.com/Viogoo/Game_Market_Nedzvetskiy_Oleg",
+      gameMarketPages: "https://viogoo.github.io/Game_Market_Nedzvetskiy_Oleg/",
+      marketPages: "https://viogoo.github.io/market/",
+      finalGameMarketPage: ""
+    },
+    {
+      email: "23a_ndi@liceum.ztu.edu.ua",
+      group: "10-А 2",
+      fullName: "Ніцкевич Дар'я",
+      gameTitle: "",
+      authorPhoto: "img/Ніцкевич.jpg",
+      gamePhoto: "img/скрінНіцкевич.png",
+      githubRepo: "https://github.com/Daria1284/Phaser2ndGame",
+      githubPages: "https://daria1284.github.io/Phaser2ndGame/",
+      documentationFolder: "https://drive.google.com/drive/folders/1sx_bP3YdCY99mFM02u-FVcmtGm8bfNc1?usp=drive_link",
+      surveyForm: "https://forms.gle/PSoFKF3f8JE8JDF18",
+      gameMarketRepo: "https://github.com/Daria1284/GameMarket_Nitskevich",
+      gameMarketPages: "https://daria1284.github.io/GameMarket_Nitskevich/",
+      marketPages: "https://daria1284.github.io/GameMarket_Nitskevich/market.html",
+      finalGameMarketPage: ""
+    },
+    {
+      email: "23a_pbv@liceum.ztu.edu.ua",
+      group: "10-А 2",
+      fullName: "Присяжнюк Богдана",
+      gameTitle: "Carpathians",
+      authorPhoto: "img/Присяжнюк.jpg",
+      gamePhoto: "img/скрінПрисяжнюк.png",
+      githubRepo: "https://github.com/Prydana/Phaser2stGame",
+      githubPages: "https://prydana.github.io/Phaser2stGame/",
+      documentationFolder: "https://drive.google.com/drive/folders/1K--lAbvnwzUQ4BjN136Blvp46ErW0mkJ",
+      surveyForm: "https://forms.gle/HnBZ5pzJ4DLpa6E69",
+      gameMarketRepo: "https://github.com/Prydana/GameMarket_Prysiazhniuk",
+      gameMarketPages: "https://prydana.github.io/GameMarket_Prysiazhniuk/",
+      marketPages: "https://prydana.github.io/GameMarket_Prysiazhniuk/market.html",
+      finalGameMarketPage: "https://prydana.github.io/GameMarket_Prysiazhniuk/students/market_st.html"
+    },
+    {
+      email: "23a_sai@liceum.ztu.edu.ua",
+      group: "10-А 2",
+      fullName: "Сікалюк Артем",
+      gameTitle: "",
+      authorPhoto: "img/Сікалюк.jpg",
+      gamePhoto: "img/скрінСікалюк.png",
+      githubRepo: "https://github.com/lokloter/Phaser2ndGame",
+      githubPages: "https://lokloter.github.io/Phaser2ndGame/",
+      documentationFolder: "https://drive.google.com/drive/folders/1CVaq2qHRHtju8V-IVYyI2a2bBJLlE-VH?usp=sharing",
+      surveyForm: "https://forms.gle/7oHYvp5hUw1oDwGZA",
+      gameMarketRepo: "https://github.com/lokloter/gamemarket",
+      gameMarketPages: "https://lokloter.github.io/gamemarket/",
+      marketPages: "",
+      finalGameMarketPage: ""
+    },
+    {
         email: "23a_sbr@liceum.ztu.edu.ua",
         group: "10-А 2",
-        image: "",
-        game_github: "https://github.com/23asbr/phaser2ndGame",
-        game_pages: "https://23asbr.github.io/phaser2ndGame/",
-        docs: "https://drive.google.com/drive/folders/1JcIFHoj8MY56cyNeD8yoQkIgYxHIFwl3?usp=drive_link",
-        forms: "https://forms.gle/DbGSNNiXNbAfQx6x6",
-        gamemarket_github: "https://github.com/23asbr/Game_Market_solomoniyk",
-        gamemarket_pages: "https://23asbr.github.io/Game_Market_solomoniyk/",
-        market_pages: "https://23asbr.github.io/Game_Market_solomoniyk/market.html",
-        stars: ""
+        fullName: "Соломонюк Богдан",
+        gameTitle: "",
+        authorPhoto: "img/Соломонюк.jpg",
+        gamePhoto: "img/скрінСоломонюк.png",
+        githubRepo: "https://github.com/23asbr/phaser2ndGame",
+        githubPages: "https://23asbr.github.io/phaser2ndGame/",
+        documentationFolder: "https://drive.google.com/drive/folders/1JcIFHoj8MY56cyNeD8yoQkIgYxHIFwl3?usp=drive_link",
+        surveyForm: "https://forms.gle/DbGSNNiXNbAfQx6x6",
+        gameMarketRepo: "https://github.com/23asbr/Game_Market_solomoniyk",
+        gameMarketPages: "https://23asbr.github.io/Game_Market_solomoniyk/",
+        marketPages: "https://23asbr.github.io/Game_Market_solomoniyk/market.html",
+        finalGameMarketPage: ""
+    },    
+    {
+      email: "23a_srm@liceum.ztu.edu.ua",
+      group: "10-А 2",
+      fullName: "Столяров Руслан",
+      gameTitle: "",
+      authorPhoto: "img/Столяров.jpg",
+      gamePhoto: "img/скрінСтоляров.png",
+      githubRepo: "https://github.com/Shxdxwbxrnzz/Phaser2ndGame",
+      githubPages: "https://shxdxwbxrnzz.github.io/Phaser2ndGame/",
+      documentationFolder: "https://drive.google.com/drive/folders/1hAhvz34e5KZ7pK-6kGDYw0V-MhZHmw3k?usp=sharing",
+      surveyForm: "https://docs.google.com/forms/d/e/1FAIpQLSfGf9QIp20gQ-Cl5FrVKXoFKkE8QcHToU52-BWm9EFHfomLUw/viewform?usp=sharing",
+      gameMarketRepo: "https://github.com/Shxdxwbxrnzz/GameMarket_Stolyarov",
+      gameMarketPages: "https://shxdxwbxrnzz.github.io/GameMarket_Stolyarov/",
+      marketPages: "https://shxdxwbxrnzz.github.io/Market/market.html",
+      finalGameMarketPage: ""
     },
     {
-        title: "",
-        author: "Філімончук Євгеній",
-        email: "23a_fyev@liceum.ztu.edu.ua",
-        group: "10-А 2",
-        image: "",
-        game_github: "https://github.com/filimonchukevgeniy/Phaser2ndGame",
-        game_pages: "https://filimonchukevgeniy.github.io/Phaser2ndGame/",
-        docs: "https://drive.google.com/drive/folders/1gLzj_epUzeFt_KBhcfez33Xx4fcSrSJ9",
-        forms: "https://forms.gle/gd2oE6EtLB3yFCa9A",
-        gamemarket_github: "https://github.com/filimonchukevgeniy/GameMarket_Filimochuk/settings/pages",
-        gamemarket_pages: "https://filimonchukevgeniy.github.io/GameMarket_Filimochuk/",
-        market_pages: "",
-        stars: ""
+      email: "23a_sdv@liceum.ztu.edu.ua",
+      group: "10-А 2",
+      fullName: "Столярчук Дмитро",
+      gameTitle: "",
+      authorPhoto: "img/Столярчук.jpg",
+      gamePhoto: "img/скрінСтолярчук.png",
+      githubRepo: "",
+      githubPages: "",
+      documentationFolder: "https://drive.google.com/drive/folders/12U9uaTrFbhzDPFx_wr8EnpO-ETNscTE5?usp=sharing",
+      surveyForm: "https://forms.gle/mbTievdu9FFLXpnV8",
+      gameMarketRepo: "",
+      gameMarketPages: "",
+      marketPages: "",
+      finalGameMarketPage: ""
     },
     {
-        title: "",
-        author: "Сікалюк Артем",
-        email: "23a_sai@liceum.ztu.edu.ua",
-        group: "10-А 2",
-        image: "",
-        game_github: "https://github.com/lokloter/Phaser2ndGame",
-        game_pages: "https://lokloter.github.io/Phaser2ndGame/",
-        docs: "https://drive.google.com/drive/folders/1CVaq2qHRHtju8V-IVYyI2a2bBJLlE-VH?usp=sharing",
-        forms: "https://forms.gle/7oHYvp5hUw1oDwGZA",
-        gamemarket_github: "https://github.com/lokloter/gamemarket",
-        gamemarket_pages: "https://lokloter.github.io/gamemarket/",
-        market_pages: "",
-        stars: ""
+      email: "23a_tkv@liceum.ztu.edu.ua",
+      group: "10-А 2",
+      fullName: "Ткач Кирил",
+      gameTitle: "",
+      authorPhoto: "img/Ткач.jpg",
+      gamePhoto: "img/скрінТкач.png",
+      githubRepo: "https://github.com/21kery21/MyFirstPygameGame",
+      githubPages: "",
+      documentationFolder: "https://drive.google.com/drive/folders/1fuUL8e5OCvSsQlp2i2UlqLIqwoI9QLOg?usp=sharing",
+      surveyForm: "https://forms.gle/uHDRhupAuBvuQrQT9",
+      gameMarketRepo: "",
+      gameMarketPages: "",
+      marketPages: "https://21kery21.github.io/Market/",
+      finalGameMarketPage: ""
     },
     {
-        title: "",
-        author: "Якубець Денис",
-        email: "23a_yada@liceum.ztu.edu.ua",
-        group: "10-А 2",
-        image: "",
-        game_github: "https://github.com/D3nis1238/Phaser-2nd-Game",
-        game_pages: "https://d3nis1238.github.io/Phaser-2nd-Game/?authuser=0",
-        docs: "https://docs.google.com/document/d/1H_AWqM8u9rFfDKVAxynlz5wGyiIW2AzeI2gTvWWs7Wc/edit?usp=sharing",
-        forms: "https://forms.gle/NtHkb7ErZAcexoPY7",
-        gamemarket_github: "https://github.com/D3nis1238/GameMarket_Yakubets",
-        gamemarket_pages: "https://d3nis1238.github.io/GameMarket_Yakubets/",
-        market_pages: "https://d3nis1238.github.io/GameMarket_Yakubets/market.html?authuser=0",
-        stars: ""
+      email: "23a_fyev@liceum.ztu.edu.ua",
+      group: "10-А 2",
+      fullName: "Філімончук Євгеній",
+      gameTitle: "",
+      authorPhoto: "img/Філімончук.jpg",
+      gamePhoto: "img/скрінФілімончук.png",
+      githubRepo: "https://github.com/filimonchukevgeniy/Phaser2ndGame",
+      githubPages: "https://filimonchukevgeniy.github.io/Phaser2ndGame/",
+      documentationFolder: "https://drive.google.com/drive/folders/1gLzj_epUzeFt_KBhcfez33Xx4fcSrSJ9",
+      surveyForm: "https://forms.gle/gd2oE6EtLB3yFCa9A",
+      gameMarketRepo: "https://github.com/filimonchukevgeniy/GameMarket_Filimochuk",
+      gameMarketPages: "https://filimonchukevgeniy.github.io/GameMarket_Filimochuk/",
+      marketPages: "",
+      finalGameMarketPage: ""
     },
     {
-        title: "",
-        author: "Будішевський Єгор",
-        email: "23a_byeyu@liceum.ztu.edu.ua",
-        group: "10-А 2",
-        image: "",
-        game_github: "https://github.com/EgorZTUkl/Platformer",
-        game_pages: "https://egorztukl.github.io/Platformer/",
-        docs: "https://drive.google.com/drive/folders/1Gme_cOgj7R14t3kaxbLxjPxgmTvhTKYq?usp=drive_link",
-        forms: "https://forms.gle/ziZ41L7qHnzp6o7x6",
-        gamemarket_github: "",
-        gamemarket_pages: "",
-        market_pages: "",
-        stars: ""
+      email: "23a_khiv@liceum.ztu.edu.ua",
+      group: "10-А 2",
+      fullName: "Хмєль Ілля",
+      gameTitle: "",
+      authorPhoto: "img/Хмєль.jpg",
+      gamePhoto: "img/скрінХмєль.png",
+      githubRepo: "https://github.com/khiv23/game1",
+      githubPages: "https://khiv23.github.io/game1/",
+      documentationFolder: "https://docs.google.com/document/d/1cJxpp8cg3h1lXFxGf03EDxdMv3SWk8C-PO5xYU-xYZg/edit",
+      surveyForm: "https://docs.google.com/forms/d/1iR5j3fyjTa7qKMMM2HUhlMLiP01NLBvM2yoLFQnbX8o/edit",
+      gameMarketRepo: "https://github.com/khiv23/GameMarket_Khmel",
+      gameMarketPages: "https://khiv23.github.io/GameMarket_Khmel/",
+      marketPages: "https://khiv23.github.io/GameMarket_Khmel/market.html",
+      finalGameMarketPage: ""
     },
     {
-        title: "",
-        author: "Михальський Нікіта",
-        email: "23a_mnv@liceum.ztu.edu.ua",
-        group: "10-А 2",
-        image: "",
-        game_github: "https://github.com/Cement-Official/Minorun",
-        game_pages: "https://cement-official.github.io/Minorun/",
-        docs: "https://docs.google.com/document/d/1lgWfQHAtTu1E_xi-3cKiAC_8ZR0TD4xTL6B5dMvqGY0/edit?usp=sharing",
-        forms: "https://forms.gle/XVTQaam7Maj2HLCh8",
-        gamemarket_github: "https://github.com/Cement-Official/GameMarket_Myhalskiy",
-        gamemarket_pages: "https://cement-official.github.io/GameMarket_Myhalskiy/",
-        market_pages: "https://cement-official.github.io/GameMarket_Myhalskiy/market.html?authuser=0",
-        stars: ""
-    },
-    {
-        title: "",
-        author: "Столярчук Дмитро",
-        email: "23a_sdv@liceum.ztu.edu.ua",
-        group: "10-А 2",
-        image: "",
-        game_github: "",
-        game_pages: "",
-        docs: "https://drive.google.com/drive/folders/12U9uaTrFbhzDPFx_wr8EnpO-ETNscTE5?usp=sharing",
-        forms: "https://forms.gle/mbTievdu9FFLXpnV8",
-        gamemarket_github: "",
-        gamemarket_pages: "",
-        market_pages: "",
-        stars: ""
-    },
-    {
-        title: "",
-        author: "Ткач Кирил",
-        email: "23a_tkv@liceum.ztu.edu.ua",
-        group: "10-А 2",
-        image: "",
-        game_github: "https://github.com/21kery21/MyFirstPygameGame",
-        game_pages: "",
-        docs: "https://drive.google.com/drive/folders/1fuUL8e5OCvSsQlp2i2UlqLIqwoI9QLOg?usp=sharing",
-        forms: "https://forms.gle/uHDRhupAuBvuQrQT9",
-        gamemarket_github: "",
-        gamemarket_pages: "",
-        market_pages: "https://21kery21.github.io/Market/",
-        stars: ""
-    },
-    {
-        title: "",
-        author: "Мединський Роман",
-        email: "23a_mrd@liceum.ztu.edu.ua",
-        group: "10-А 2",
-        image: "",
-        game_github: "https://github.com/MedynskyiRoman/Phaser2ndGame",
-        game_pages: "https://medynskyiroman.github.io/Phaser2ndGame/",
-        docs: "https://drive.google.com/drive/folders/1ujjej9ifF-2xqLKIc5X2vpohSn6ZenZ4?usp=sharing",
-        forms: "https://forms.gle/MzKxFco9L798EjKi8?authuser=1",
-        gamemarket_github: "https://github.com/MedynskyiRoman/GameMarket_Medynskyi",
-        gamemarket_pages: "https://medynskyiroman.github.io/GameMarket_Medynskyi/",
-        market_pages: "https://medynskyiroman.github.io/market-test1",
-        stars: ""
-    },
-    {
-        title: "",
-        author: "Столяров Руслан",
-        email: "23a_srm@liceum.ztu.edu.ua",
-        group: "10-А 2",
-        image: "",
-        game_github: "https://shxdxwbxrnzz.github.io/Phaser2ndGame/",
-        game_pages: "https://github.com/Shxdxwbxrnzz/Phaser2ndGame",
-        docs: "https://drive.google.com/drive/folders/1hAhvz34e5KZ7pK-6kGDYw0V-MhZHmw3k?usp=sharing",
-        forms: "https://docs.google.com/forms/d/e/1FAIpQLSfGf9QIp20gQ-Cl5FrVKXoFKkE8QcHToU52-BWm9EFHfomLUw/viewform?usp=sharing",
-        gamemarket_github: "https://shxdxwbxrnzz.github.io/GameMarket_Stolyarov/",
-        gamemarket_pages: "https://github.com/Shxdxwbxrnzz/GameMarket_Stolyarov",
-        market_pages: "https://shxdxwbxrnzz.github.io/Market/market.html",
-        stars: ""
+      email: "23a_yada@liceum.ztu.edu.ua",
+      group: "10-А 2",
+      fullName: "Якубець Денис",
+      gameTitle: "",
+      authorPhoto: "img/Якубець.jpg",
+      gamePhoto: "img/скрінЯкубець.png",
+      githubRepo: "https://github.com/D3nis1238/Phaser-2nd-Game",
+      githubPages: "https://d3nis1238.github.io/Phaser-2nd-Game/?authuser=0",
+      documentationFolder: "https://docs.google.com/document/d/1H_AWqM8u9rFfDKVAxynlz5wGyiIW2AzeI2gTvWWs7Wc/edit?usp=sharing",
+      surveyForm: "https://forms.gle/NtHkb7ErZAcexoPY7",
+      gameMarketRepo: "https://github.com/D3nis1238/GameMarket_Yakubets",
+      gameMarketPages: "https://d3nis1238.github.io/GameMarket_Yakubets/",
+      marketPages: "https://d3nis1238.github.io/GameMarket_Yakubets/market.html?authuser=0",
+      finalGameMarketPage: ""
     }
-]
+  ];  
 
-//Отримання елементу з ідентифікатором
+// Отримання елементу з ідентифікатором
 let itemsDiv = document.getElementById('items');
 
-//перевірки чи знайшли елемент
+// Перевірка чи знайшли елемент
 if (itemsDiv) {
-    //вивід знайденого елементу
-    //console.log(itemsDiv);
+    // Вивід знайденого елементу
+    console.log(itemsDiv);
 
-    //Створення за прізвищем
-    itemsArray
-    
-    .forEach((item, index) => {
-    //console.log(item)
-    itemsDiv.innerHTML += 
-    `
-    <div class="item">
-                <div class="item-title">${item.title}</div>
-
-                <!-- Блок зображення товару -->
-                <div class="item-image">                    
-                    <img src="${item.image}" alt="Скрін гри">
+    // Створення за прізвищем
+    itemsArray.forEach((item) => {
+        itemsDiv.innerHTML += `
+            <div class="item">
+                <div class="item-title">${item.gameTitle}</div>
+                <div class="item-info">
+                    <div class="item-author">${item.fullName} ${item.group} ${item.email}</div>
+                    <img src="${item.authorPhoto}" alt="Фото автора" class="author-photo">
+                    <img src="${item.gamePhoto}" alt="Скрін гри" class="game-photo">
                 </div>
-
-                <!-- Блок частин оплати -->
-                    <div class="parts-pay">
-                    <div>
-                    <img src="" alt="">
-                    <a href="${item.game_github}" target="_blank">Код гри<span>${item.game_github}</span></a>
+                <div class="links">
+                    <a href="${item.githubRepo}" target="_blank">GitHub Repository</a>
+                    <a href="${item.githubPages}" target="_blank">GitHub Pages_Game</a>
+                    <a href="${item.documentationFolder}" target="_blank">Google Drive Documentation</a>
+                    <a href="${item.surveyForm}" target="_blank">Survey Form</a>
+                    <a href="${item.gameMarketRepo}" target="_blank">GitHub Repository GameMarket</a>
+                    <a href="${item.gameMarketPages}" target="_blank">GitHub Pages Design</a>
+                    <a href="${item.marketPages}" target="_blank">Market Pages 4 Products</a>
+                    <a href="${item.finalGameMarketPage}" target="_blank">Market Pages Final</a>
                 </div>
-                <div>
-                    <img src="img/pt.png" alt="">
-                    <a href="${item.gamemarket_pages}" target="_blank">Сторінка на магазин<span>${item.gamemarket_pages}</span></a>
-                </div>
-</div>
-
-
-                <!-- Блок ціни -->
-                <div class="price">
-                    <div><span></span><sup></sup></div>
-                    <div><span>${item.author}</span><sup></sup></div>
-                </div>
-
-                <!-- Блок бонусної ціни -->
-                <div class="price bonus">
-                <div></div>
-                <div>
-                <a href=" target="${item.game_pages}"_blank">
-                <span>ПОГРАТИ</span>
-                </a>
-                <sup></sup>
-    </div>
-</div>
-
-
-    `
-})
-
-    // //вивід значень
-    // console.log('Поле classList: ', itemsDiv.classList)
-    // console.log('Поле id: ', itemsDiv.id)
-    // console.log('Поле  clientWight: ', itemsDiv.clientWidth)
-    // console.log('Поле innerHTML: ', itemsDiv.innerHTML)
-
-    // //Додавання тексту в блок
-    // itemsDiv.innerText = 'Програмно доданий текст';
-    // itemsDiv.innerText += 'Другий програмно доданий текст';
-    // //додавання коду в скрипти
-    // itemsDiv.innerHTML += '<h1>Програмно доданий текст</h1>';
-
-    // //Додавання відформатованого HTML коду в блок
-    // for(let i = 0; i< 10; i++){
-    //     itemsDiv.innerHTML += '<div class = "item"></div>'
-    // }
+            </div>
+        `;
+    });
 } else {
-    //вивід повідомлення що блок товарів не знайдено
+    // Вивід повідомлення що блок товарів не знайдено
     console.log('Перевір код товарів');
 }
 
-// //Сортування масиву
-// itemsArray = itemsArray.sort()
+// Сортування масиву
+itemsArray = itemsArray.sort((a, b) => a.fullName.localeCompare(b.fullName));
 
-// //Виведення в консоль масиву товарів
-// for (let i = 0; i < itemsArray.length; i++){
-//     console.log(i + '-й елемент: ', itemsArray[i])
-// }
+// Виведення в консоль масиву товарів
+itemsArray.forEach((item, index) => {
+    console.log(`${index + 1}-й елемент: `, item);
+});
